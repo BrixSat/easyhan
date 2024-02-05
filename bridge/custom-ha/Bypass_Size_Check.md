@@ -1,7 +1,7 @@
 Custom Maker:
 
 ```sh
-vv=2024.02.00001
+vv=2023.10.00001
 file=master.zip
 url=https://github.com/home-assistant/core/archive/refs/heads/${file}
 #
@@ -12,7 +12,7 @@ ls -a
 pwd
 #
 wget $url
-unzip -j master.zip core-master/homeassistant/components/modbus/* -d .
+unzip -j master.zip 'core-master/homeassistant/components/modbus/*' -d .
 rm $file
 ls -a
 pwd
